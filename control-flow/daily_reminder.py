@@ -1,8 +1,8 @@
 single_task = input("Enter your task: ")
 
 while True:
-    priority_level = input("Priority (high/medium/low): ").lower()
-    if priority_level in ["high", "medium", "low"]:
+    priority = input("Priority (high/medium/low): ").lower()
+    if priority in ["high", "medium", "low"]:
         break
     else:
         print("Invalid priority. Please enter 'high', 'medium', or 'low'.")
@@ -14,7 +14,7 @@ while True:
     else:
         print("Invalid response. Please enter 'yes' or 'no'.")
 
-match priority_level:
+match priority:
     case "high":
         if time_sensitive == "yes":
             print(f"Reminder: '{single_task}' is a high priority task that requires immediate attention today!") 
