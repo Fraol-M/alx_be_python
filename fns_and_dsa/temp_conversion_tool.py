@@ -21,6 +21,6 @@ match check:
     case "C":
         print(f"{temp}°C is {convert_to_fahrenheit(temp)}°F")
     case _:
-        print("Invalid Input")
+        print("Invalid temperature. Please enter a numeric value.")
         
         
